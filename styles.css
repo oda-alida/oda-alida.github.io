@@ -4,11 +4,8 @@ body,
 main,
 section,
 img,
-figure,
 span,
 header,
-footer,
-a,
 h1,
 h2,
 h3,
@@ -77,8 +74,7 @@ p {
 
 main {
   margin: 3rem 1.5rem 3rem 1.5rem;
-  max-width: 1920px;
-  padding: 2em 0 2em 1em;
+  padding: 2em 1em;
   border-radius: 15px;
   background-color: var(--light);
   display: flex;
@@ -109,8 +105,8 @@ main section h2 {
 }
 main section img {
   position: absolute;
-  bottom: 1.5em;
-  right: 1em;
+  bottom: 1em;
+  right: 0;
   width: clamp(120px, 15%, 300px);
 }
 
@@ -118,5 +114,11 @@ main section img {
   main header div img {
     width: 26px;
     height: auto;
+  }
+}
+@media only screen and (min-width: 1921px) {
+  main {
+    max-width: calc(1920px - 3rem);
+    margin: 3rem auto;
   }
 }/*# sourceMappingURL=styles.css.map */

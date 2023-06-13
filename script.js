@@ -19,7 +19,7 @@ function showPosition(position) {
     url: url,
     contentType: "application/json",
     success: function (result) {
-      console.log(result);
+      // console.log(result);
       $("[data-position]").text(
         result.location.name + ", " + result.location.country
       );
